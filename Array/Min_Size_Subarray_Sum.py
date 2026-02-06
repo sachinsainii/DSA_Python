@@ -1,15 +1,15 @@
 def Min_Size_Subarray_Sum(arr,target):
     n=len(arr)
     left=0
-    total=0
+    sum=0
     min_len=float('inf')
 
     for right in range(n):
-        total+=arr[right]
+        sum+=arr[right]
 
-        while total>=target:
+        while sum>=target:
             min_len = min(min_len,right-left+1)
-            total-=arr[left]
+            sum-=arr[left]
             left+=1
 
     if min_len==float('inf'):
@@ -18,4 +18,3 @@ def Min_Size_Subarray_Sum(arr,target):
         return min_len
 
 print(Min_Size_Subarray_Sum([2,4,4],4))
-

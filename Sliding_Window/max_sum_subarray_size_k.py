@@ -16,3 +16,4 @@ def maxSumSubarray(arr,k):
     return max_sum
 
 print(maxSumSubarray([2,3,4,5,7],2))
+
