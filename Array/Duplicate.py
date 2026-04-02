@@ -15,3 +15,4 @@ def dup(head):
     print(f'without duplicate values array are:',head[:unique])
     print(f"Total unique elements are:",unique)
 dup([1,1,2,2,3,5,6])
+
