@@ -12,5 +12,6 @@ def SubArraySumEqualsToK(nums,k):
             res += freq[red]
         freq[sum] = freq.get(sum,0)+1
     return res
+    
 
 print(SubArraySumEqualsToK([1,1,1],2))
