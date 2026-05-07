@@ -13,16 +13,7 @@ class Solution:
                 neg.append(i)
             else:
                 pos.append(i)
-
-        # #case 1: no negative numbers
-        # if len(neg)==0:
-        #     [i*i for i in pos]
             
-        # #case2: no positives numbers
-        # if len(pos) == 0:
-        #     [i*i for i in neg][::-1]
-            
-
         #case3: both exist
         neg = [i*i for i in neg][::-1]
         pos = [i*i for i in pos]
